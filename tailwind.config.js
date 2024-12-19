@@ -4,12 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bricolage: ["Bricolage Grotesque"],
-      },
-      fontWeight: {
-        light: "300",
-        normal: "400",
-        bold: "700",
+        bricolage: ["Bricolage Grotesque", "sans-serif"],
       },
     },
   },

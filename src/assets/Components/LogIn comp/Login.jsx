@@ -1,5 +1,6 @@
 import React from "react";
 import LogoImage from "../../Images/LogoChatAi.png";
+import "../../../App.css";
 
 export default function Login() {
   return (
