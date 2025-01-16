@@ -1,5 +1,6 @@
 import React from "react";
 import LogoImage from "../../Images/LogoChatAi.png";
+import { useNavigate } from "react-router-dom";
 import "../../../App.css";
 import EmailIcon from "../../Images/Email-Icon.png";
 import PassIcon from "../../Images/First.png";
@@ -8,6 +9,12 @@ import Google from "../../Images/googleImage.png";
 import Facebook from "../../Images/FacebookImage.png";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/home");
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main Content */}
@@ -63,7 +70,10 @@ export default function Login() {
 
         {/* Login Button */}
         <div className="w-full flex justify-center items-center">
-          <button className="w-[90%] h-[56px] bg-emerald-500 text-white font-bricolage rounded-full">
+          <button
+            className="w-[90%] h-[56px] bg-emerald-500 text-white font-bricolage rounded-full"
+            onClick={handleLogin}
+          >
             Login
           </button>
         </div>
